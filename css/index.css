@@ -1,0 +1,56 @@
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 500px;
+  padding-left: 50px;
+  background-color: rgb(250, 243, 244);
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(250, 243, 244);
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#experience{
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+
+
+
+table {
+  width: 50%
+}
+
+th {
+  text-align: left
+}
+
+td {
+  height: 50px;
+  vertical-align: middle
+}
+
+p {
+  text-align: left;
+  color: rgb(10, 10, 10);
+  }
+
