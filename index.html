@@ -1,1 +1,200 @@
-szia
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lebenslauf Reka Szenes</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<div>
+<!-- <style="background-color: rgb(240, 240, 240);"> -->
+<!-- <Forditas> -->
+<a href="#eng" data-reload>English</a>
+<a href="#es" data-reload>Espanol</a>
+
+<p id="hi">
+  Welcome everyone!
+</p>
+<script>
+// define language reload anchors
+var dataReload = document.querySelectorAll("[data-reload]");
+
+// Language translations
+var language = {
+  eng: {
+    Welcome: "Welcome everyone!"
+  },
+  es: {
+    Welcome: "Bienvenidos todos!"
+  }
+};
+
+// Define language via window hash
+if (window.location.hash) {
+    if (window.location.hash === "#es"){
+      hi.textContent = language.es.welcome;
+    }
+}
+
+// define language reload onclick illiteration
+for (i = 0; i <=dataReload.length; i++) {
+  dataReload[i].onclick = function() {
+    location.reload(true);
+  };
+};
+</script>
+<!-- <Forditas> -->
+
+<h1>Lebenslauf</h1>
+<i class="material-icons">favorite</i>
+
+<ul id="navbar"> <!-- <Navigation bar horizontal> -->
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="persdata.asp">Persönliche Daten</a></li>
+    <li><a href="berufserfahrung.asp">Berufserfahrung</a></li>
+    <li><a href="ausbildung.asp">Ausbildung und Online Kurse</a></li>
+    <li><a href="kenntnisse.asp">Kenntnisse und Interessen</a></li>
+  </ul> 
+
+<h2>Persönliche Daten</h2>
+<p></p><b>Name: </b>Reka Brigitta Szenes</p>
+<p></p><b>Adresse: </b>Raffaelgasse, 1200 Wien</p>
+<br>
+
+<div id="experience">
+<h2>Berufserfahrung</h2>
+<dl><!-- <munkatapasztalat 1> -->
+<dt><b><i>05/2019 - Gegenwärtig</i></b></dt>
+<dd>- Umzug nach Wien </dd>
+<dd>- Deutschkurse (Niveau A2, B1, B2.1, B2.2)</dd>
+<dd>- Selbstbildung in den Bereichen Software - testing,<br> grundlegende Webentwicklung, Datenbanken und UI / UX-Design<br> (Udemy-Kurse und Hilfe von Freunden in der IT)</dd>
+</dl>
+
+<dl><!-- <munkatapasztalat 2.1> -->
+<dt><b><i>03/2018 - 04/2019  Travelminit International SRL, Klausenburg, Rumänien</i><br><b>Kundendienst assistent (3 Monate):</b></b></dt>
+<dd>- Schriftliche sowie telefonische Kundenberatung und betreuung <br> zum Themenbereich Unterkunfts reservierung</dd>
+<dd>- Schriftliche sowie telefonische Beantwortung von Kundenanfragen</dd>
+<dd>- Datenerfassung und -pflege</dd>
+<dd>-  Beschwerdemanagement, Bearbeitung von Reklamationen mit dem Ziel der Kundenzufriedenheit </dd>
+<dd>- Telefonische Beantwortung von Partnerfragen, (die Eigentümer der Unterkünfte)</dd>
+</dl>
+
+<dl><!-- <munkatapasztalat 2.2> -->
+<dt><b>Rechnungsverwaltungs team (4 Monate):</b></dt>
+<dd>- Effiziente Verarbeitung von Lieferantenrechnungen und <br> tagesaktuelle Systempflege </dd>
+<dd>- Untersuchung und Lösung aller Zahlungsprobleme</dd>
+<dd>- Korrektur weitergehender Probleme bei Kreditorenkonten <br> von Mitarbeitern und Lieferanten </dd>
+</dl>
+
+<dl><!-- <munkatapasztalat 2.3> -->
+<dt><b>Team für Urlaubskarten (6 Monate):</b></dt>
+<dd>- Erhaltung von Urlaubskarten von Kunden via Post oder Courier</dd>
+<dd>- Überprüfung der Gültigkeit von Urlaubskarten</dd>
+<dd>- Zahlungsbestätigung für die Kunden, <br> zustellung per Email oder persönlich ausgehändigt.</dd>
+<dd>- Einlösung der Gutscheine gehörte auch zu meinem Aufgabenbereich</dd>
+</dl>
+
+<dl><!-- <munkatapasztalat 3> -->
+<dt><b><i>8/2018 Freiwilliger, Klausenburg, Rumänien</i></b></dt>
+<dd>- Ich war zwei Wochen lang eine der Gruppenleiterinnen, <br>als wir nach Taize (Frankreich) und zurück nach Rumänien <br> durch Europa gereist haben.</dd>
+</dl>
+
+<dl><!-- <munkatapasztalat 4> -->
+<dt><b><i>08/2014 - 9/2014 Savi Travel Reisebüro Sathmar​ , ​Rumänien</i><br>Praktikantin:</b></dt>
+<dd>- Organisierung von saisonale Kataloge und Angebote</dd>
+<dd>- Bankgeschäfte zu erledigen</dd>
+<dd>- An den persönlichen Gesprächen mit den Kunden teilzunehmen</dd>
+<dd>- die Kundendaten auf dem aktuellsten Stand zu halten</dd>
+</dl><br>
+</div>
+
+<h2>Ausbildung und Online Kurse</h2>
+<table style="width: 50%"><!-- <Kurzusok> -->
+  <tr>
+    <th>05/2019 - Gegenwärtig </th>
+    <th>Codecademy<br>HTML, CSS, JAVASCRIPT</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Basic HTML elements, forms, tables etc.</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Guru99<br>Software testing</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Basic skills and concepts of Software Testing; Selenium; Git</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Linuxacademy.com<br></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Database Administration and SQL Language Basics</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Udemy.com<br>In-Depth Software Testing Training Course From Scratch </th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>QA Software Testing Training Course; JIRA; Bugzilla </td>
+  </tr>
+</table><br>
+
+<table style="width: 50%"><!-- <Mesteri> -->
+  <tr>
+    <th>10/2016 - 07/2018</th>
+    <th>Universität Babeș - Bólyai<br>Klausenburg, Rumänien<br><i>Tourismus und territoriale Entwicklung Msc.</i></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Schwerpunkte: Tourismus<br> – Auslandssemester in Budapest  (Tourismusmanagement - Budapest Business School</td>
+  </tr>
+</table><br>
+
+<table style="width: 50%"><!-- <Alapkepzes> -->
+  <tr>
+    <th>10/2013 - 07/2016</th>
+    <th>Universität Babeș - Bólyai<br>Klausenburg, Rumänien<br><i>Geographie des Tourismus Bsc​.</i></th>
+  </tr>
+  <tr>
+    <td><td>
+    <td>Basic HTML elements, forms, tables etc.</td>
+  </tr>
+</table><br>
+
+<h2>Kenntnisse und Interessen</h2>
+
+<h3>Fremdsprachen</h3>
+<ul>
+  <li>Ungarisch - Muttersprache</li>
+  <li>Rumänisch - Verhandlungssicher (C1)</li>
+  <li>Englisch - Fließend (C1)</li>
+  <li>Deutsch - Gute Kenntnisse (B2)</li>
+</ul>
+
+<h3>IT-Kenntnisse</h3>
+<ul>
+  <li>MS-Office: erfahrener Benutzer</li>
+  <li>Figma, Zeplin, HTML, CSS, Jira & Confluence, Git,<br> Software testing concepts, Bugzilla, MySQL, SQL  Selenium </li>
+</ul>
+
+<h3>Führerschein: </h3>
+<p> B</p>
+
+
+
+
+<footer>
+<a href="converter.html">Converter</a> 
+<a href="ship.html">Ship</a>
+</footer>
+
+</div>
+</body>
+</html>
