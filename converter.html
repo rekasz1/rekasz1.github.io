@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-
+<div>
 <head>
     <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
     <script src="js/converter.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/converter.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+    <title>Your Converter</title>
 </head>
 
 <body>
-    <h1>Hello, this is your Converter!</h1>
-    <p>Always caused a headache form me, if i had to convert units in my head.... </p>
-    <!-- <form> -->
-        Convert from:<br>
-        <input type="number" id="convertable">
-        <input type="button" value="kg" onclick="toLbs();"/>
-        <input type="button" value="km" onclick="toMile();"/>
-        <input type="button" value="l" onclick="toCbm();"/><br>
-        To:<br>
-        <input type="number" id ="converted">
-        <input type="button" value="lbs" onclick="toKg();"/>
-        <input type="button" value="mile" onclick="toKm();"/>
-        <input type="button" value="cbm" onclick="toL();"/>
-    <!-- </form> -->
-</body>
 
+    <img src="img/kitchen-scale.png">
+  <header>
+    
+    <h1>Your Converter</h1>
+  </header>
+    <p>Always caused a headache for me, if i had to convert units in my head.... </p>
+ 
+    <p>
+        <label>Kilograms</label>
+        <input id="inputKilograms" type="number" placeholder="Kilogramm"
+        oninput="unitConverter(this.value)"
+        onchange="unitConverter(this.value)">
+      </p>
+      <p>Pounds: <span id="outputPounds"></span></p> 
+</body>
+</div>
 </html>
