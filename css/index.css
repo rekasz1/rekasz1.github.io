@@ -39,8 +39,8 @@ h1 {
 /* height of body and the document to 100% to enable "full page tabs" */
 body, html {
   height: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
   font-family: Arial;
   min-height: 100%;
 }
@@ -52,7 +52,7 @@ body, html {
 }
 
 .header {
-  padding: 60px; /* some padding */
+  padding: 10px;
   text-align: center; /* center the text */
   background: #1abc9c; /* green background */
   color: white; /* white text color */
@@ -65,7 +65,7 @@ body, html {
 
 /* Style tab links */
 .tablink {
-  background-color: #1abc9c;
+  background-color: grey;
   color: white;
   float: left;
   border: none;
@@ -77,8 +77,8 @@ body, html {
 }
 
 .tablink:hover {
-  background-color: white;
-  color :black
+  background-color: #1abc9c;
+  color :white
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -90,7 +90,7 @@ body, html {
 }
 
 #PersonalInformation {background-color: white;}
-#WorkExperience {background-color: white;}
+#WorkExperience {background-color: white}
 #Education {background-color: white;}
 #SkillsandInterests {background-color: white;}
 #MyPortfolio {background-color: white;}
@@ -99,9 +99,11 @@ body, html {
   padding: 20px; /* Some padding */
   text-align: center;  /*Center text*/
   background: #ddd; /* Grey background */
-  position: absolut;
+  position: fixed;
   width: 100%;
-  color: rgb(70, 69, 69)
+  color: rgb(70, 69, 69);
+  left: 0;
+  bottom: 0;
 }
 
 dl {
