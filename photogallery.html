@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Nature</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/photogallery.css">
+  </head>
+
+  <body>
+    <!--<div class="key-formatting">-->
+
+    <div class="frame">
+
+      <div class="key-formatting">
+        <a href="#" id="previous" class="previous round">&#8249;</a>
+        <img id="photo" src="img/redstones.jpg" style="height:
+          400px">
+        <a href="#" id="next" class="next round">&#8250;</a>
+        <h1 id="photo-title"></h1>
+        <p id="photo-description" style="word-break: normal"></p>
+      </div>
+      <div id="thumbnails" onclick="myFunction()">
+      <!--<p>Clicked:<span id="clicked"></p>-->
+      </div>
+
+    </div>
+
+
+    <!--</div>-->
+
+    <script>
+    let data = [{
+        photo: 'img/redstones.jpg',
+        title: 'Red Stone Gate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \n sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/darkbeach.jpg',
+        title: 'Dark Beach',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/foggyforest.jpg',
+        title: 'Foggy Forest',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/milkyway.jpg',
+        title: 'Milky Way',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/sky.jpg',
+        title: 'Cloudy Skies',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/surf.jpg',
+        title: 'Waves',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        photo: 'img/volcanoes.jpg',
+        title: 'Flowing Lava',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      }
+    ];
+
+
+let currentPhoto = 0;
+
+let loadPhoto = (currentPhoto) => {
+  $('#photo').attr('src', data[currentPhoto].photo); 
+  $('#photo-title').text(data[currentPhoto].title);
+  $('#photo-description').text(data[currentPhoto].description);
+}
+
+$('#previous').click(() => {
+  if(currentPhoto > 0) {
+  currentPhoto--;  
+  }
+
+loadPhoto(currentPhoto);
+});
+
+$('#next').click(() => {
+  if (currentPhoto < 6) {
+  currentPhoto++;
+  }
+  loadPhoto(currentPhoto);
+});
+
+loadPhoto(currentPhoto);
+
+//thumbnailek
+
+data.forEach((photo,currentPhoto) => {
+  $('#thumbnails').append(`<div><div class="th-title">${data[currentPhoto].title}</div><img style="width:150px;padding:10px;height:100px" data-index="${currentPhoto}" src="${data[currentPhoto].photo}"> </div>`);
+  // $('#thumbnails').append(``);
+ //$('#thumbnails').append(`<div id="th-title">${data[currentPhoto].title}</div>`);
+});
+
+/*let data = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"];
+
+data.forEach((item, index) => {
+  $('#thumbnails').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+  $('.box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+let numberIndex = parseInt(indexClicked)
+    $('#clicked').text(data[indexClicked]);
+  });
+});*/
+
+function myFunction() {
+
+document.getElementById("thumbnails").innerHTML=load.data
+
+};
+/*document.getElementById("thumbnails").onclick = load(photo);*/
+/*myFunction(load(data));
+  /*document.getElementsByTagName("thumbnails").style.box-shadow = "lime";
+
+  document.getElementById("thumbnails").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("thumbnails").innerHTML = "YOU CLICKED ME!" };*/
+
+
+    </script>
+  </body>
+</html>
