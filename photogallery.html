@@ -21,10 +21,7 @@
         <h1 id="photo-title"></h1>
         <p id="photo-description" style="word-break: normal"></p>
       </div>
-
-      <div id="thumbnails" >
       <div id="thumbnails" onclick="myFunction()">
-
       <!--<p>Clicked:<span id="clicked"></p>-->
       </div>
 
@@ -100,11 +97,7 @@ loadPhoto(currentPhoto);
 //thumbnailek
 
 data.forEach((photo,currentPhoto) => {
-
-  $('#thumbnails').append(`<div><div class="th-title">${data[currentPhoto].title}</div><img onclick="myFunction()" style="width:150px;padding:10px;height:100px" data-index="${currentPhoto}" src="${data[currentPhoto].photo}"> </div>`);
-
   $('#thumbnails').append(`<div><div class="th-title">${data[currentPhoto].title}</div><img style="width:150px;padding:10px;height:100px" data-index="${currentPhoto}" src="${data[currentPhoto].photo}"> </div>`);
-
   // $('#thumbnails').append(``);
  //$('#thumbnails').append(`<div id="th-title">${data[currentPhoto].title}</div>`);
 });
@@ -120,11 +113,7 @@ let numberIndex = parseInt(indexClicked)
   });
 });*/
 
-
-/*function myFunction(data) {
-
 function myFunction() {
-
 
 document.getElementById("thumbnails").innerHTML=load.data
 
