@@ -1,26 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/myfirstgallery.css">
-    <script src="js/myfirstgallery.js" type="text/javascript"></script>
+    <!-- <script src="js/myfirstgallery.js" type="text/javascript"></script> -->
     <title>Photo gallery</title>
-</head>
-<body>
-  <div class = "previous">
-    <img src="http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg" >
-  </div>
-  <div class = "key-formatting">
-    <div class = "photo">
-      <img src="img/redstones.jpg">
-      <p>Red Stone Gate</p>
+  </head>
+  <body>
+    <div class="key-formatting">
+      <a href="#" id="previous" class="previous round">&#8249;</a>
+      <div class="gallery">
+        <img id="photo">
+        <div class="grey-container">
+          <h1 id="photo-title"></h1>
+          <p id="photo-description"></p>
+        </div>
+      </div>
+      <a href="#" id= "next" class="next round">&#8250;</a>
     </div>
-  </div>
-  <div class = "next">
-    <img src="http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg" >
-  </div>
+    <div class="footerth">
+    <footer id= "thumbnails">
+    </div>
+    </div> 
     
-</body>
+    
+    
+    
+    <script>
+    let data = [{
+        photo: 'img/redstones.jpg',
+        title: 'Red Stone Gate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/darkbeach.jpg',
+        title: 'Dark Beach',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/foggyforest.jpg',
+        title: 'Foggy Forest',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/milkyway.jpg',
+        title: 'Milky Way',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/sky.jpg',
+        title: 'Cloudy Skies',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/surf.jpg',
+        title: 'Waves',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      },
+      {
+        photo: 'img/volcanoes.jpg',
+        title: 'Flowing Lava',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      }
+    ];
+
+
+let currentPhoto = 0;
+
+let loadPhoto = (currentPhoto) => {
+  $('#photo').attr('src', data[currentPhoto].photo); 
+  $('#photo-title').text(data[currentPhoto].title);
+  $('#photo-description').text(data[currentPhoto].description);
+}
+
+$('#previous').click(() => {
+  if(currentPhoto > 0) {
+  currentPhoto--;  
+  }
+
+loadPhoto(currentPhoto);
+});
+
+$('#next').click(() => {
+  if (currentPhoto < 6) {
+  currentPhoto++;
+  }
+  loadPhoto(currentPhoto);
+});
+
+loadPhoto(currentPhoto);
+
+//thumbnailek
+
+data.forEach((photo,currentPhoto) => {
+  $('#thumbnails').append(`<img style="width:150px;padding:10px;height:100px" data-index="${currentPhoto}" src="${data[currentPhoto].photo}">`);
+ $('#thumbnails').append(`<div id="photo-title">${data[currentPhoto].title}</div>`);
+});
+
+
+
+    </script>
+  </body>
 </html>
