@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <!--<div class="key-formatting">-->
 
     <div class="frame">
 
@@ -25,7 +24,7 @@
       <div id="thumbnails">
 
 
-        <!--<p>Clicked:<span id="clicked"></p>-->
+        
       </div>
 
     </div>
@@ -72,9 +71,9 @@
     ];
 
 
-var currentPhoto = 0;
+let currentPhoto = 0;
 
-var loadPhoto = (currentPhoto) => {
+let loadPhoto = (currentPhoto) => {
   $('#photo').attr('src', data[currentPhoto].photo); 
   $('#photo-title').text(data[currentPhoto].title);
   $('#photo-description').text(data[currentPhoto].description);
@@ -97,7 +96,7 @@ $('#next').click(() => {
 
 loadPhoto(currentPhoto);
 
-//thumbnailek
+//thumbnails
 
 data.forEach((photo,currentPhoto) => {
 
