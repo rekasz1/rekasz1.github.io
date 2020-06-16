@@ -87,6 +87,7 @@ body, html {
   display: none;
   padding: 100px 20px;
   height: 100%;
+  text-align: center;
 }
 
 #PersonalInformation {background-color: white;}
@@ -154,6 +155,10 @@ p {
   border-radius: 10%;
   background: #0e76a8;
   color: white;
+  text-align: center;
+}
+
+div.a {
   text-align: center;
 }
 
