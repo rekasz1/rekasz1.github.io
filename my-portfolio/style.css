@@ -23,4 +23,18 @@ button {
   border-radius: 8px;
   border-color: #515e69;
   background-color: transparent;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+
+  transition: 1s ease-in-out;
 }
+
+button:hover {
+  transition: 1s ease-in-out;
+  background: #384653;
+  color: #071929;
+  border:none;
+  
+}
+
+
