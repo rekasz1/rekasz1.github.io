@@ -1,4 +1,4 @@
-import createButton from "../my-portfolio/button";
+import createButton from "./button";
 
 function createHeader() {
     let header = document.createElement('header')
