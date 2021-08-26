@@ -1,6 +1,6 @@
 function createButton(label) {
 
-    var button = document.createElement("button");
+    let button = document.createElement("button");
     button.innerHTML = label;
 
     button.style.width = "150px";
