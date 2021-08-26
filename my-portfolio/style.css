@@ -1,13 +1,20 @@
+*{
+  box-sizing:border-box;
+}
+
 body {
+  margin: 0;
+  padding: 20px;
   background-color: #1f2f3e;
 }
+
+/* Header-Style  */
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  /* align-content: flex-end; */
 }
 
 header :nth-child(2){
@@ -18,14 +25,12 @@ button {
   margin-right: 50px;
   font-size: 20px;
   color: #515E69;
-  /* border-radius: 20%; */
   border-style: solid;
   border-radius: 8px;
   border-color: #515e69;
   background-color: transparent;
   letter-spacing: 0.2em;
   cursor: pointer;
-
   transition: 1s ease-in-out;
 }
 
@@ -34,7 +39,26 @@ button:hover {
   background: #384653;
   color: #071929;
   border:none;
-  
 }
 
+/* ContentDiv Style */
 
+ #content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    letter-spacing: 0.2em;
+    
+  }
+  
+  h1 {
+    font-size: 3rem;
+    /* font-weight: 600; */
+    width: 40%;
+    
+  }
