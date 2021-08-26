@@ -1,0 +1,40 @@
+body {
+  background-color: #1f2f3e;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* align-content: flex-end; */
+}
+
+header :nth-child(2){
+  margin-right: 70px;
+}
+
+button {
+  margin-right: 50px;
+  font-size: 20px;
+  color: #515E69;
+  /* border-radius: 20%; */
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #515e69;
+  background-color: transparent;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+
+  transition: 1s ease-in-out;
+}
+
+button:hover {
+  transition: 1s ease-in-out;
+  background: #384653;
+  color: #071929;
+  border:none;
+  
+}
+
+
