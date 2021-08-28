@@ -1,0 +1,116 @@
+*{
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0;
+    /* padding: 20px; */
+    background-color: #1f2f3e;
+  }
+  
+  /* Header-Style  */
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  header :nth-child(3){
+    margin-right: 70px;
+  }
+  
+
+  /* a {
+    text-decoration: none;
+    color: #515E69;
+    /* text-align: center;
+    vertical-align: middle; */
+    /* text-align: center;
+    margin: auto; */
+    /* font-size: 1rem; 
+  } */
+
+  #button-home, #button-aboutme, #button-project {
+    text-decoration: none;
+  }
+
+  .button {
+    
+    margin-right: 50px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: transparent;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+  }
+  
+  .button:hover {
+    transition: 1s ease-in-out;
+    background: none;
+    color: #515E69;
+  }
+
+  #button-home {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  /* ContentDiv Style */
+
+  #content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    letter-spacing: 0.2em;
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    /* font-weight: 600; */
+    width: 40%;    
+  }
+  
+  #portrait {
+    /* width: 20%; */
+    width: 200px;
+  }
+
+  footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    position: fixed;
+    /* font-size: 1rem; */
+     display: flex;
+    flex-direction: row;
+     justify-content: flex-end; 
+    align-items:center;
+    align-content:center;
+    text-align: center; 
+    /* background-color: #1f2f3e; */
+  } 
+
+  #linkedin, #github {
+      font-size: 2em;
+      text-decoration: none;
+      margin:30px;
+      letter-spacing: 0.2em;
+      font-family: 'Rampart One', cursive;
+      color:white
+      /* color:azure; */
+      /* text-align: center; */
+  }
+  
