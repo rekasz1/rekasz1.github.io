@@ -9,7 +9,7 @@ export function createHeader() {
     body.appendChild(header);
 
 
-    createButton('Home', 'home.html', 'button', 'button-home')
+    createButton('Home', 'index.html', 'button', 'button-home')
     createButton('About Me', 'aboutme.html', 'button', 'button-aboutme')
     createButton('Projects', 'aboutme.html', 'button', 'button-project')
     // createButton("Projects")
