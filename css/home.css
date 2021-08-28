@@ -1,5 +1,6 @@
 *{
     box-sizing:border-box;
+    /* color: #fcfcff */
   }
   
   body {
@@ -20,17 +21,7 @@
   header :nth-child(3){
     margin-right: 70px;
   }
-  
 
-  /* a {
-    text-decoration: none;
-    color: #515E69;
-    /* text-align: center;
-    vertical-align: middle; */
-    /* text-align: center;
-    margin: auto; */
-    /* font-size: 1rem; 
-  } */
 
   #button-home, #button-aboutme, #button-project {
     text-decoration: none;
@@ -62,7 +53,6 @@
     display: none;
   }
 
-  /* ContentDiv Style */
 
   #content-container {
     /* position:absolute; */
@@ -75,9 +65,7 @@
     padding-top:9%;
   } 
 
-  /* #content-container > h1:nth-child(2) {
-    color:white
-  } */
+  
    
   p {
     letter-spacing: 0.2em;
@@ -93,7 +81,7 @@
     font-size: 2.2rem;
     /* font-weight: 600; */
     width: max-content;   
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
 
     font-family: 'Roboto Mono', monospace; 
     position: relative;
@@ -116,7 +104,7 @@
 
   h1::after {
     width: 0.125em;
-    background-color: #515E69;
+    background-color: #fcfcff;
     animation: typewriter 6s steps(36) 1s forwards,
      blinked 650ms steps(36) infinite;
   }
