@@ -11,8 +11,8 @@ export function createButton(text, href, className, id) {
     button.id = id;
 
 
-    let container = document.getElementsByTagName("header")[0];
-    container.appendChild(button);
-
+    // let container = document.getElementsByTagName("header")[0];
+    // container.appendChild(button);
+    return button
 
 }

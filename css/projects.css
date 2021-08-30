@@ -1,0 +1,92 @@
+*{
+    box-sizing:border-box;
+    color: #fcfcff;
+  }
+  
+  body {
+    margin: 0;
+    /* padding: 20px; */
+    background-color: #1f2f3e;
+  }
+  
+  /* Header-Style  */
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  header :nth-child(2){
+    margin-right: 70px;
+  }
+  
+
+  #button-home, #button-aboutme, #button-project {
+    text-decoration: none;
+  }
+
+  .button {
+    
+    margin-right: 50px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: transparent;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    /* width: 200px; */
+    width: max-content;
+    height: 40px;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+  }
+  
+  .button:hover {
+    transition: 1s ease-in-out;
+    background: none;
+    color: #515E69;
+  }
+
+  /* #button-project {
+    display: none;
+  } */
+
+  /* Content Style */
+  
+  #project-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    /* position: relative;  */
+    /* width: max-content; */
+    text-align: center;
+    /* margin: auto; */
+  }
+
+  /* Footer Style */
+  footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    position: fixed;
+    /* font-size: 1rem; */
+     display: flex;
+    flex-direction: row;
+     justify-content: flex-end; 
+    align-items:center;
+    align-content:center;
+    text-align: center; 
+    /* background-color: #1f2f3e; */
+  } 
+
+  #linkedin, #github {
+      font-size: 2em;
+      text-decoration: none;
+      margin:30px;
+      letter-spacing: 0.2em;
+      font-family: 'Rampart One', cursive;
+      color:white
+      /* color:azure; */
+      /* text-align: center; */
+  }

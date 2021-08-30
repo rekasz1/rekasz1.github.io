@@ -6,7 +6,7 @@ function createDivForContent() {
     let divForContent = document.createElement('div')
     divForContent.setAttribute('id', 'div-for-content')
 
-    var bodyApp = document.getElementsByTagName("div")[0];
+    let bodyApp = document.getElementsByTagName("div")[0];
     bodyApp.appendChild(divForContent);
 
 

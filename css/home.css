@@ -36,7 +36,8 @@
     letter-spacing: 0.2em;
     cursor: pointer;
     transition: 1s ease-in-out;
-    width: 200px;
+    /* width: 200px; */
+    width: max-content;
     height: 40px;
     text-align: center;
     font-family: 'Rampart One', cursive;
@@ -48,10 +49,10 @@
     color: #515E69;
   }
 
-  #button-home {
-    /* visibility: hidden; */
+  /* #button-home {
+    
     display: none;
-  }
+  } */
 
 
   #content-container {
@@ -146,7 +147,7 @@
     align-items:center;
     align-content:center;
     text-align: center; 
-    /* background-color: #1f2f3e; */
+    background-color: #1f2f3e;
   } 
 
   #linkedin, #github {

@@ -5,14 +5,21 @@ export function createHeader() {
 
     header.style.height = "100px";
 
-    var body = document.getElementsByTagName("div")[0];
-    body.appendChild(header);
+    var headerContainer = document.getElementsByTagName("div")[0];
+    headerContainer.appendChild(header);
 
-
-    createButton('Home', 'index.html', 'button', 'button-home')
-    createButton('About Me', 'aboutme.html', 'button', 'button-aboutme')
-    createButton('Projects', 'aboutme.html', 'button', 'button-project')
+    const homebutton = createButton('Home', 'index.html', 'button', 'button-home')
+    const aboutMeButton = createButton('About Me', 'aboutme.html', 'button', 'button-aboutme')
+    const projectButton = createButton('Projects', 'projects.html', 'button', 'button-project')
     // createButton("Projects")
+
+    let container = document.getElementsByTagName("header")[0];
+    container.appendChild(homebutton);
+    container.appendChild(aboutMeButton);
+    container.appendChild(projectButton);
+
+    // header.appendChild(homebutton)
+    // return header
 
 }
 
