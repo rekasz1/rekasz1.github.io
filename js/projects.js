@@ -9,51 +9,51 @@ var projectsList = [
         id: projectId++,
         title: "Rock Paper Scissors Game",
         source: 'https://github.com/rekasz1/Rock_Paper_Scissors',
-        img: "../assets/Rock-paper-scissors.png"
+        img: "../assets/Rock-paper-scissors.PNG"
     },
     {
         id: projectId++,
         title: "Player and Monster Game",
         source: 'https://github.com/rekasz1/Player_And_Monsters',
-        img: "../assets/player-monster.png"
+        img: "../assets/player-monster.PNG"
     },
     {
         id: projectId++,
         title: "Guess my Number Game",
         source: 'https://github.com/rekasz1/Guess_My_Number',
-        img: "../assets/Guess-my-number.png"
+        img: "../assets/Guess-my-number.PNG"
     },
 
     {
         id: projectId++,
         title: "Digital Timer",
         source: 'https://github.com/rekasz1/Digital_Timer',
-        img: "../assets/Timer.png"
+        img: "../assets/Timer.PNG"
     },
     {
         id: projectId++,
         title: "Convert Kg To Pund",
         source: 'https://github.com/rekasz1/Converter_Kg_Pound',
-        img: "../assets/Converter.png"
+        img: "../assets/Converter.PNG"
     },
     {
         id: projectId++,
         title: "To Do Lsit",
         source: 'https://github.com/rekasz1/To_Do_List',
-        img: "../assets/Todo.png"
+        img: "../assets/Todo.PNG"
     },
     {
         id: projectId++,
         title: "Move The Spaceship Around",
         source: 'https://github.com/rekasz1/Spaceship',
-        img: "../assets/spaceship.png"
+        img: "../assets/spaceship.PNG"
     },
 
     {
         id: projectId++,
         title: "Fake React Shop",
         source: 'https://github.com/rekasz1/Fake_React_Shop',
-        img: "../assets/react-shop.png"
+        img: "../assets/react-shop.PNG"
     },
 ];
 
