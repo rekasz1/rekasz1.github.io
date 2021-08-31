@@ -1,5 +1,5 @@
-import { createHeader } from './header.js'
-import { createFooter } from './footer.js'
+import { createHeader } from '../reusable_js_code/header.js'
+import { createFooter } from '../reusable_js_code/footer.js'
 
 function createDivForContent() {
 
@@ -8,9 +8,6 @@ function createDivForContent() {
 
     let bodyApp = document.getElementsByTagName("div")[0];
     bodyApp.appendChild(divForContent);
-
-
-
 }
 
 function createAboutMe() {

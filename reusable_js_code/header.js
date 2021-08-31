@@ -9,8 +9,8 @@ export function createHeader() {
     headerContainer.appendChild(header);
 
     const homebutton = createButton('Home', 'index.html', 'button', 'button-home')
-    const aboutMeButton = createButton('About Me', 'aboutme.html', 'button', 'button-aboutme')
-    const projectButton = createButton('Projects', 'projects.html', 'button', 'button-project')
+    const aboutMeButton = createButton('About Me', '../about_me/aboutme.html', 'button', 'button-aboutme')
+    const projectButton = createButton('Projects', '../projects/projects.html', 'button', 'button-project')
     // createButton("Projects")
 
     let container = document.getElementsByTagName("header")[0];
