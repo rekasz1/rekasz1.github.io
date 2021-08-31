@@ -8,8 +8,10 @@ export function createsiteDescription() {
 
     let title = document.createElement('h1');
     title.style.color = "rgb(252, 252, 255)";
-    title.innerText = '<Hi, I’m Reka, Front-end Developer/>';
+    title.innerText = '<Hi, I’m  Reka, Front-end Developer/>';
+    // title.innerHTML = '<Hi, I’m  Reka, Front-end <span style="color:red">Developer</span>/>';
     title.setAttribute('id', 'glitch')
+
 
 
     let description = document.createElement('p');
