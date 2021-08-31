@@ -1,6 +1,6 @@
-import { createHeader } from './header.js'
+import { createHeader } from '../reusable_js_code/header.js'
 
-import { createFooter } from './footer.js'
+import { createFooter } from '../reusable_js_code/footer.js'
 
 var projectId = 0
 
