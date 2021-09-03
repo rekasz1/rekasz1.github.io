@@ -64,7 +64,7 @@ var projectsList = [
 function createProjectItem(id, title, source, img) {
     let projectItemDiv = document.createElement('div');
     projectItemDiv.setAttribute('id', id);
-    // projectItemDiv.className('project-items')
+    projectItemDiv.classList.add('project-items');
 
 
     let projectItemTitle = document.createElement('a');
@@ -75,8 +75,8 @@ function createProjectItem(id, title, source, img) {
 
     let projectItemImg = document.createElement('img');
     projectItemImg.src = img;
-    projectItemImg.style.width = '300px'
-    projectItemImg.style.height = '200px'
+    projectItemImg.style.width = '350px'
+    projectItemImg.style.height = '230px'
 
     // let projectItemDivContainer = document.getElementsByClassName('project-items');
     projectItemDiv.append(projectItemImg);
@@ -90,18 +90,32 @@ function createProjectItem(id, title, source, img) {
 
 function appendProjectElements() {
 
-    for (let index = 0; index < projectsList.length; index++) {
-        let projectItem = projectsList[index]
+    let projectElementsDiv = document.createElement('div');
+    projectElementsDiv.setAttribute('id', 'projects-container');
 
-        let projectitemContainer = document.getElementById("App");
+
+    for (let index = 0; index < projectsList.length; index++) {
+        let projectItem = projectsList[index];
 
         let projectItemDiv1 = createProjectItem(projectItem.id, projectItem.title, projectItem.source, projectItem.img);
-        // projectItemDiv1 = createProjectItem(projectItem.id, projectItem.img);
 
-        projectitemContainer.appendChild(projectItemDiv1)
+        projectElementsDiv.appendChild(projectItemDiv1);
 
     }
+
+    return projectElementsDiv
 }
+
+function appendElements() {
+
+    let toAppend = appendProjectElements();
+
+    let projectitemContainer = document.getElementById("App");
+    projectitemContainer.appendChild(toAppend);
+
+}
+
+
 
 function createProjectsTitle() {
     let projectTitleDiv = document.createElement('div')
@@ -129,5 +143,6 @@ function createProjectsTitle() {
 createHeader()
 createProjectsTitle()
 // createProjectItem()
-appendProjectElements()
+// appendProjectElements()
+appendElements()
 createFooter()

@@ -16,10 +16,11 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap ;
   }
   
   header :nth-child(3){
-    margin-right: 70px;
+    margin-right: 3rem;
   }
 
 
@@ -29,7 +30,7 @@
 
   .button {
     
-    margin-right: 50px;
+    margin-right: 30px;
     font-size: 1.8rem;
     color: white;
     background-color: transparent;
@@ -38,7 +39,7 @@
     transition: 1s ease-in-out;
     /* width: 200px; */
     width: max-content;
-    height: 40px;
+    /* height: 40px; */
     text-align: center;
     font-family: 'Rampart One', cursive;
   }
@@ -62,8 +63,9 @@
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    left: 17%;
+    left: 18%;
     padding-top:9%;
+    padding-bottom: 150px;
   } 
 
   
@@ -76,6 +78,7 @@
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease  7s forwards;
+    /* z-index: 99; */
   }
   
   h1 {
@@ -86,6 +89,7 @@
 
     font-family: 'Roboto Mono', monospace; 
     position: relative;
+    /* z-index: 99; */
   }
 
   h1::before,
@@ -103,6 +107,7 @@
     animation: typewriter 6s steps(36) 1s forwards;
   }
 
+ 
   h1::after {
     width: 0.125em;
     background-color: #fcfcff;
@@ -110,11 +115,15 @@
      blinked 650ms steps(36) infinite;
   }
 
+  
   @keyframes typewriter {
     to{
       left:100%
     }
   }
+
+
+
   
   @keyframes blinked {
    to{background: transparent;
@@ -124,15 +133,25 @@
   }
 
 
+
   #portrait {
     width: 22%;
     
     position:absolute;
     bottom:100px;
-    left: 10%;
+    left: 9%;
+    cursor: pointer;
+  transition: all 200ms ease-in;
+  filter: grayscale(1) opacity(.8);
+    /* margin-right:2% */
 
   }
 
+  #portrait:hover {
+    filter: grayscale(0) opacity(1);
+  }
+
+  
   /* Footer Style */
 
   footer{
@@ -148,12 +167,13 @@
     align-content:center;
     text-align: center; 
     background-color: #1f2f3e;
+    flex-wrap: wrap ;
   } 
 
   #linkedin, #github {
       font-size: 2em;
       text-decoration: none;
-      margin:30px;
+      margin-right:30px;
       letter-spacing: 0.2em;
       font-family: 'Rampart One', cursive;
       color:white
@@ -161,6 +181,7 @@
       /* text-align: center; */
   }
 
+ 
   @keyframes fadeInUp{
 
     to {
@@ -169,4 +190,11 @@
     }
 
   }
+  /* @media only screen and (max-width : 600px) {
+    #more-about-Me-div > h1 {
+
+      font-size: 30px;
+
+    }
+  }  */
   

@@ -25,8 +25,9 @@ export function createsiteDescription() {
 
     let contentDiv = document.getElementById('content-container');
 
-    contentDiv.appendChild(portrait);
+
     contentDiv.appendChild(title);
     contentDiv.appendChild(description);
+    contentDiv.appendChild(portrait);
 
 }
