@@ -5,7 +5,6 @@
   
   body {
     margin: 0;
-    /* padding: 20px; */
     background-color: #1f2f3e;
   }
   
@@ -31,15 +30,13 @@
   .button {
     
     margin-right: 30px;
-    font-size: 1.8rem;
+    font-size: 2em;
     color: white;
     background-color: transparent;
     letter-spacing: 0.2em;
     cursor: pointer;
     transition: 1s ease-in-out;
-    /* width: 200px; */
     width: max-content;
-    /* height: 40px; */
     text-align: center;
     font-family: 'Rampart One', cursive;
   }
@@ -47,60 +44,38 @@
   .button:hover {
     transition: 1s ease-in-out;
     background: none;
-    color: #515E69;
+    color: #6a757e;
   }
-
-  /* #button-project {
-    display: none;
-  } */
 
   /* Content Style */
   
   #project-title {
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
-    /* position: relative;  */
-    /* width: max-content; */
     text-align: center;
-    /* margin: auto; */
   }
 
-
-
   .project-items{
-    /* position: relative; */
-    /* content:""; */
     padding: 2.5% 1.5%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* text-align: center; */
     background-color: #515e69;
     border-radius: 10px;
-    /* border: dotted white; */
     margin-top: 1.5rem;
 
     
     box-shadow:
-  0 0.8px 2.2px rgba(0, 0, 0, 0.141),
-  0 2px 5.3px rgba(0, 0, 0, 0.202),
-  0 3.8px 10px rgba(0, 0, 0, 0.25),
-  0 6.7px 17.9px rgba(0, 0, 0, 0.298),
-  0 12.5px 33.4px rgba(0, 0, 0, 0.359),
-  0 30px 80px rgba(0, 0, 0, 0.5)
-
-
+    0 0.8px 2.2px rgba(0, 0, 0, 0.141),
+    0 2px 5.3px rgba(0, 0, 0, 0.202),
+    0 3.8px 10px rgba(0, 0, 0, 0.25),
+    0 6.7px 17.9px rgba(0, 0, 0, 0.298),
+    0 12.5px 33.4px rgba(0, 0, 0, 0.359),
+    0 30px 80px rgba(0, 0, 0, 0.5)
   }
 
   .project-items:active {
     transform: scale(0.90);
   }
-
-
-  /* .project-items:hover{
-    transform: scale(1.2);
-  } */
-  
 
   .project-items > img {
     border-radius: 5px;
@@ -116,7 +91,6 @@
     font-family: 'Indie Flower', cursive;
     font-size: 1.7rem; 
     font-weight: bold;
-
   }
 
     #projects-container{
@@ -124,24 +98,20 @@
    flex-direction: row ;
    flex-wrap: wrap ;
    justify-content: space-evenly;
-   /* margin-bottom: 100px; */
    padding-bottom: 150px;
 
   }
 
-
-
-
   /* Footer Style */
+
   footer{
     position:absolute;
     bottom:0;
     width:100%;
     position: fixed;
-    /* font-size: 1rem; */
-     display: flex;
+    display: flex;
     flex-direction: row;
-     justify-content: flex-end; 
+    justify-content: flex-end; 
     align-items:center;
     align-content:center;
     text-align: center; 
@@ -157,6 +127,18 @@
       font-family: 'Rampart One', cursive;
       color:white;
       width: max-content;
-      /* color:azure; */
-      /* text-align: center; */
+  }
+
+  #github:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #6e5494;
+
+  }
+
+  #linkedin:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #2867b2;
+
   }

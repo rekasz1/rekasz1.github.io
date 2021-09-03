@@ -1,11 +1,9 @@
 *{
     box-sizing:border-box;
-    /* color: #fcfcff */
   }
   
   body {
     margin: 0;
-    /* padding: 20px; */
     background-color: #1f2f3e;
   }
   
@@ -29,17 +27,14 @@
   }
 
   .button {
-    
     margin-right: 30px;
-    font-size: 1.8rem;
+    font-size: 2em;
     color: white;
     background-color: transparent;
     letter-spacing: 0.2em;
     cursor: pointer;
     transition: 1s ease-in-out;
-    /* width: 200px; */
     width: max-content;
-    /* height: 40px; */
     text-align: center;
     font-family: 'Rampart One', cursive;
   }
@@ -47,17 +42,10 @@
   .button:hover {
     transition: 1s ease-in-out;
     background: none;
-    color: #515E69;
+    color: #6a757e;
   }
 
-  /* #button-home {
-    
-    display: none;
-  } */
-
-
   #content-container {
-    /* position:absolute; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -66,6 +54,7 @@
     left: 18%;
     padding-top:9%;
     padding-bottom: 150px;
+    margin: 0 auto
   } 
 
   
@@ -78,18 +67,13 @@
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease  7s forwards;
-    /* z-index: 99; */
   }
   
   h1 {
     font-size: 2.2rem;
-    /* font-weight: 600; */
     width: max-content;   
-    /* font-family: 'Indie Flower', cursive; */
-
     font-family: 'Roboto Mono', monospace; 
     position: relative;
-    /* z-index: 99; */
   }
 
   h1::before,
@@ -123,8 +107,6 @@
   }
 
 
-
-  
   @keyframes blinked {
    to{background: transparent;
 
@@ -132,19 +114,23 @@
 
   }
 
+  @keyframes fadeInUp{
 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
 
   #portrait {
     width: 22%;
-    
     position:absolute;
     bottom:100px;
     left: 9%;
     cursor: pointer;
-  transition: all 200ms ease-in;
-  filter: grayscale(1) opacity(.8);
-    /* margin-right:2% */
-
+    transition: all 200ms ease-in;
+    filter: grayscale(1) opacity(.8);
   }
 
   #portrait:hover {
@@ -159,10 +145,9 @@
     bottom:0;
     width:100%;
     position: fixed;
-    /* font-size: 1rem; */
-     display: flex;
+    display: flex;
     flex-direction: row;
-     justify-content: flex-end; 
+    justify-content: flex-end; 
     align-items:center;
     align-content:center;
     text-align: center; 
@@ -177,19 +162,22 @@
       letter-spacing: 0.2em;
       font-family: 'Rampart One', cursive;
       color:white
-      /* color:azure; */
-      /* text-align: center; */
+  }
+
+  #github:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #6e5494;
+  }
+
+  #linkedin:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #2867b2;
   }
 
  
-  @keyframes fadeInUp{
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-  }
+  
   /* @media only screen and (max-width : 600px) {
     #more-about-Me-div > h1 {
 

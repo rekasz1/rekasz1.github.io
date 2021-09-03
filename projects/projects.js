@@ -1,6 +1,5 @@
-import { createHeader } from '../reusable_js_code/header.js'
-
-import { createFooter } from '../reusable_js_code/footer.js'
+import { createHeader } from '../reusable_js_code/header.js';
+import { createFooter } from '../reusable_js_code/footer.js';
 
 var projectId = 0
 
@@ -66,23 +65,18 @@ function createProjectItem(id, title, source, img) {
     projectItemDiv.setAttribute('id', id);
     projectItemDiv.classList.add('project-items');
 
-
     let projectItemTitle = document.createElement('a');
     projectItemTitle.innerHTML = title;
     projectItemTitle.href = source;
     projectItemTitle.setAttribute('target', '_blank')
-
 
     let projectItemImg = document.createElement('img');
     projectItemImg.src = img;
     projectItemImg.style.width = '350px'
     projectItemImg.style.height = '230px'
 
-    // let projectItemDivContainer = document.getElementsByClassName('project-items');
     projectItemDiv.append(projectItemImg);
     projectItemDiv.append(projectItemTitle);
-
-
 
     return projectItemDiv
 }
@@ -122,27 +116,17 @@ function createProjectsTitle() {
     projectTitleDiv.setAttribute('id', 'title-container')
 
     let projectTitle = document.createElement('h1');
-    // projectTitle.style.color = "rgb(252, 252, 255)";
     projectTitle.setAttribute('id', 'project-title')
     projectTitle.innerHTML = 'Here I present my main creations made during the course (and not only) that I’m proud of';
 
     let mainDiv = document.getElementsByTagName('div')[0];
     mainDiv.appendChild(projectTitleDiv);
 
-    let projectTitileContainer = document.getElementById('title-container');
-    projectTitileContainer.appendChild(projectTitle)
+    projectTitleDiv.appendChild(projectTitle)
 }
-
-
-
-// function createPostOfProject {
-
-// }
 
 
 createHeader()
 createProjectsTitle()
-// createProjectItem()
-// appendProjectElements()
 appendElements()
 createFooter()

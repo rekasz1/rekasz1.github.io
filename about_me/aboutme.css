@@ -6,10 +6,7 @@
   
   body {
     margin: 0;
-    /* padding: 20px; */
     background-color: #1f2f3e;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
   }
   
   /* Header-Style  */
@@ -32,17 +29,14 @@
   }
 
   .button {
-    
     margin-right: 30px;
-    font-size: 1.8rem;
+    font-size: 2em;
     color: white;
     background-color: transparent;
     letter-spacing: 0.2em;
     cursor: pointer;
     transition: 1s ease-in-out;
-    /* width: 200px; */
     width: max-content;
-    /* height: 40px; */
     text-align: center;
     font-family: 'Rampart One', cursive;
   }
@@ -50,20 +44,14 @@
   .button:hover {
     transition: 1s ease-in-out;
     background: none;
-    color: #515E69;
+    color: #6a757e;
   }
-
-  /* #button-aboutme {
-    
-    display: none;
-  } */
-
 
   /* Content Style */
 
   #more-about-Me-div{
       width: max-content;
-      /* padding: 40px; */
+      padding-top: 40px;
   }
 
   #more-about-Me-div > h1 {
@@ -71,7 +59,6 @@
      font-family: 'Roboto Mono', monospace; 
     position: relative; 
     width: max-content;
-    /* text-align: center; */
     margin: auto;
 
   }
@@ -113,25 +100,17 @@
   }
 
 
-
-
-
   #more-about-Me-div > p {
     font-size: 1.9rem; 
     font-family: 'Indie Flower', cursive;
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease  4s forwards;
-    /* width:max-content; */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
  } 
 
   .title-text {
-      width: 20%;
-      transition: all .2s ease-in-out;
-     
+    width: 20%;
+    transition: all .2s ease-in-out; 
     font-family: 'Roboto Mono', monospace;
   }
 
@@ -153,11 +132,9 @@
   }
 
   #div-for-content{
-      
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: max-content; */
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 40px;
@@ -175,15 +152,10 @@
    justify-content: space-around;
    width:100%;
    margin: 0 auto;
-   /* padding:10% */
-   /* width: max-content; */
-
-
+   align-content: center;
   }
 
   #education-div{
-    /* margin:10%; */
-    /* padding:5%; */
     opacity: 0;
     width: max-content;
     transform: translateY(3rem);
@@ -192,10 +164,7 @@
 
   #education-div :nth-child(5){
     font-weight:bold;
-    /* text-transform: uppercase; */
   }
-
-  
 
   #language-div{
     width: max-content;
@@ -220,14 +189,13 @@
 
   }
 
-
   /* Footer Style */
+
   footer{
     position:absolute;
     bottom:0;
     width:100%;
     position: fixed;
-    /* font-size: 1rem; */
      display: flex;
     flex-direction: row;
      justify-content: flex-end; 
@@ -246,8 +214,18 @@
       letter-spacing: 0.2em;
       font-family: 'Rampart One', cursive;
       color:white
-      /* color:azure; */
-      /* text-align: center; */
+  }
+
+  #github:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #6e5494;
+  }
+
+  #linkedin:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #2867b2;
   }
 
 
