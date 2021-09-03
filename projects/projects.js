@@ -1,6 +1,5 @@
-import { createHeader } from '../reusable_js_code/header.js'
-
-import { createFooter } from '../reusable_js_code/footer.js'
+import { createHeader } from '../reusable_js_code/header.js';
+import { createFooter } from '../reusable_js_code/footer.js';
 
 var projectId = 0
 
@@ -64,25 +63,20 @@ var projectsList = [
 function createProjectItem(id, title, source, img) {
     let projectItemDiv = document.createElement('div');
     projectItemDiv.setAttribute('id', id);
-    // projectItemDiv.className('project-items')
-
+    projectItemDiv.classList.add('project-items');
 
     let projectItemTitle = document.createElement('a');
     projectItemTitle.innerHTML = title;
     projectItemTitle.href = source;
     projectItemTitle.setAttribute('target', '_blank')
 
-
     let projectItemImg = document.createElement('img');
     projectItemImg.src = img;
-    projectItemImg.style.width = '300px'
-    projectItemImg.style.height = '200px'
+    projectItemImg.style.width = '350px'
+    projectItemImg.style.height = '230px'
 
-    // let projectItemDivContainer = document.getElementsByClassName('project-items');
     projectItemDiv.append(projectItemImg);
     projectItemDiv.append(projectItemTitle);
-
-
 
     return projectItemDiv
 }
@@ -90,44 +84,49 @@ function createProjectItem(id, title, source, img) {
 
 function appendProjectElements() {
 
-    for (let index = 0; index < projectsList.length; index++) {
-        let projectItem = projectsList[index]
+    let projectElementsDiv = document.createElement('div');
+    projectElementsDiv.setAttribute('id', 'projects-container');
 
-        let projectitemContainer = document.getElementById("App");
+
+    for (let index = 0; index < projectsList.length; index++) {
+        let projectItem = projectsList[index];
 
         let projectItemDiv1 = createProjectItem(projectItem.id, projectItem.title, projectItem.source, projectItem.img);
-        // projectItemDiv1 = createProjectItem(projectItem.id, projectItem.img);
 
-        projectitemContainer.appendChild(projectItemDiv1)
+        projectElementsDiv.appendChild(projectItemDiv1);
 
     }
+
+    return projectElementsDiv
 }
+
+function appendElements() {
+
+    let toAppend = appendProjectElements();
+
+    let projectitemContainer = document.getElementById("App");
+    projectitemContainer.appendChild(toAppend);
+
+}
+
+
 
 function createProjectsTitle() {
     let projectTitleDiv = document.createElement('div')
     projectTitleDiv.setAttribute('id', 'title-container')
 
     let projectTitle = document.createElement('h1');
-    // projectTitle.style.color = "rgb(252, 252, 255)";
     projectTitle.setAttribute('id', 'project-title')
     projectTitle.innerHTML = 'Here I present my main creations made during the course (and not only) that I’m proud of';
 
     let mainDiv = document.getElementsByTagName('div')[0];
     mainDiv.appendChild(projectTitleDiv);
 
-    let projectTitileContainer = document.getElementById('title-container');
-    projectTitileContainer.appendChild(projectTitle)
+    projectTitleDiv.appendChild(projectTitle)
 }
-
-
-
-// function createPostOfProject {
-
-// }
 
 
 createHeader()
 createProjectsTitle()
-// createProjectItem()
-appendProjectElements()
+appendElements()
 createFooter()

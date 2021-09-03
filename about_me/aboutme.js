@@ -3,10 +3,26 @@ import { createFooter } from '../reusable_js_code/footer.js'
 
 function createDivForContent() {
 
-    let divForContent = document.createElement('div')
-    divForContent.setAttribute('id', 'div-for-content')
+    let education = createEductaion()
+    let language = createLanguageknowledge()
+    let interest = createInterests();
 
-    let bodyApp = document.getElementsByTagName("div")[0];
+
+    let eduLanIntDiv = document.createElement('div');
+    eduLanIntDiv.setAttribute('id', 'eduLanInt-content');
+    eduLanIntDiv.appendChild(education);
+    eduLanIntDiv.appendChild(language);
+    eduLanIntDiv.appendChild(interest);
+
+
+    let divForContent = document.createElement('div');
+    divForContent.setAttribute('id', 'div-for-content');
+
+    let aboutMe = createAboutMe();
+    divForContent.appendChild(aboutMe)
+    divForContent.appendChild(eduLanIntDiv)
+
+    let bodyApp = document.getElementsByTagName('div')[0];
     bodyApp.appendChild(divForContent);
 }
 
@@ -19,46 +35,41 @@ function createAboutMe() {
     let moreAboutMeText = document.createElement('p');
     moreAboutMeText.innerText = 'I am an enthusiastic front-end developer (check my GitHub page, you will find a link in the footer), who believes that in the near future IT will be her career. I am looking for new challenges, stepping out of my comfort zone, and ways to widen my knowledge and skills. Good communication and problem solving skills are essential in my day-to-day work.'
 
-    let mainDiv = document.getElementById('div-for-content');
-    // let mainDiv = document.getElementsByTagName('div')[0];
-    mainDiv.appendChild(moreAboutMeDiv)
+    moreAboutMeDiv.appendChild(moreAboutMeTitle)
+    moreAboutMeDiv.appendChild(moreAboutMeText)
 
-    let aboutMeDiv = document.getElementById('more-about-Me-div')
-    aboutMeDiv.appendChild(moreAboutMeTitle)
-    aboutMeDiv.appendChild(moreAboutMeText)
+    return moreAboutMeDiv
 
 }
 
 function createEductaion() {
+
     let educationDiv = document.createElement('div');
     educationDiv.setAttribute('id', 'education-div');
     educationDiv.className = "title-text";
-
 
     let educationTitle = document.createElement('h2')
     educationTitle.innerText = 'Education';
 
     let programName = document.createElement('h4')
-    programName.innerText = 'Front-end Web Development Course'
+    programName.innerText = 'Front-end Web \n Development Course';
 
     let schoolName = document.createElement('p')
-    schoolName.innerText = 'Scoala Infromala de IT'
+    schoolName.innerText = 'Scoala Infromala de IT';
 
     let date = document.createElement('p')
-    date.innerText = '19/04/21 - 04/09/21'
+    date.innerText = '19/04/21 - 04/09/21';
 
     let skills = document.createElement('p')
-    skills.innerHTML = 'HTML - CSS - JavaScript - React'
+    skills.innerHTML = 'HTML - CSS - JavaScript - React';
 
-    let mainDiv = document.getElementById('div-for-content');
-    mainDiv.appendChild(educationDiv)
+    educationDiv.appendChild(educationTitle)
+    educationDiv.appendChild(programName)
+    educationDiv.appendChild(schoolName)
+    educationDiv.appendChild(date)
+    educationDiv.appendChild(skills)
 
-    let educationContainer = document.getElementById('education-div')
-    educationContainer.appendChild(educationTitle)
-    educationContainer.appendChild(programName)
-    educationContainer.appendChild(schoolName)
-    educationContainer.appendChild(date)
-    educationContainer.appendChild(skills)
+    return educationDiv
 
 }
 
@@ -82,17 +93,13 @@ function createLanguageknowledge() {
     let german = document.createElement('p');
     german.innerHTML = 'German - conversational';
 
+    languageDiv.appendChild(elementTitle)
+    languageDiv.appendChild(hungarian)
+    languageDiv.appendChild(english)
+    languageDiv.appendChild(romanian)
+    languageDiv.appendChild(german)
 
-
-    let languagesDiv = document.getElementById('div-for-content');
-    languagesDiv.appendChild(languageDiv);
-
-    let languagesContainer = document.getElementById('language-div')
-    languagesContainer.appendChild(elementTitle)
-    languagesContainer.appendChild(hungarian)
-    languagesContainer.appendChild(english)
-    languagesContainer.appendChild(romanian)
-    languagesContainer.appendChild(german)
+    return languageDiv
 }
 
 function createInterests() {
@@ -118,27 +125,17 @@ function createInterests() {
     let coding = document.createElement('p');
     coding.innerHTML = 'Coding';
 
-    let mainDiv = document.getElementById('div-for-content');
-    mainDiv.appendChild(InterestsDiv)
+    InterestsDiv.appendChild(interestsTitle);
+    InterestsDiv.appendChild(biking)
+    InterestsDiv.appendChild(hiking)
+    InterestsDiv.appendChild(reading)
+    InterestsDiv.appendChild(movies)
+    InterestsDiv.appendChild(coding)
 
-
-
-    let interestsContainer = document.getElementById('interests-div')
-    interestsContainer.appendChild(interestsTitle);
-    interestsContainer.appendChild(biking)
-    interestsContainer.appendChild(hiking)
-    interestsContainer.appendChild(reading)
-    interestsContainer.appendChild(movies)
-    interestsContainer.appendChild(coding)
+    return InterestsDiv
 }
 
 
 createHeader()
 createDivForContent()
-createAboutMe()
-createEductaion()
-createLanguageknowledge()
-createInterests()
-
-// createsiteDescription()
 createFooter()

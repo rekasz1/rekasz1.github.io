@@ -1,11 +1,9 @@
 *{
     box-sizing:border-box;
-    /* color: #fcfcff */
   }
   
   body {
     margin: 0;
-    /* padding: 20px; */
     background-color: #1f2f3e;
   }
   
@@ -16,10 +14,11 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap ;
   }
   
   header :nth-child(3){
-    margin-right: 70px;
+    margin-right: 3rem;
   }
 
 
@@ -28,17 +27,14 @@
   }
 
   .button {
-    
-    margin-right: 50px;
-    font-size: 1.8rem;
+    margin-right: 30px;
+    font-size: 2em;
     color: white;
     background-color: transparent;
     letter-spacing: 0.2em;
     cursor: pointer;
     transition: 1s ease-in-out;
-    /* width: 200px; */
     width: max-content;
-    height: 40px;
     text-align: center;
     font-family: 'Rampart One', cursive;
   }
@@ -46,24 +42,19 @@
   .button:hover {
     transition: 1s ease-in-out;
     background: none;
-    color: #515E69;
+    color: #6a757e;
   }
 
-  /* #button-home {
-    
-    display: none;
-  } */
-
-
   #content-container {
-    /* position:absolute; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    left: 17%;
+    left: 18%;
     padding-top:9%;
+    padding-bottom: 150px;
+    margin: 0 auto
   } 
 
   
@@ -80,10 +71,7 @@
   
   h1 {
     font-size: 2.2rem;
-    /* font-weight: 600; */
     width: max-content;   
-    /* font-family: 'Indie Flower', cursive; */
-
     font-family: 'Roboto Mono', monospace; 
     position: relative;
   }
@@ -103,6 +91,7 @@
     animation: typewriter 6s steps(36) 1s forwards;
   }
 
+ 
   h1::after {
     width: 0.125em;
     background-color: #fcfcff;
@@ -110,55 +99,19 @@
      blinked 650ms steps(36) infinite;
   }
 
+  
   @keyframes typewriter {
     to{
       left:100%
     }
   }
-  
+
+
   @keyframes blinked {
    to{background: transparent;
 
    }
 
-  }
-
-
-  #portrait {
-    width: 22%;
-    
-    position:absolute;
-    bottom:100px;
-    left: 10%;
-
-  }
-
-  /* Footer Style */
-
-  footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    position: fixed;
-    /* font-size: 1rem; */
-     display: flex;
-    flex-direction: row;
-     justify-content: flex-end; 
-    align-items:center;
-    align-content:center;
-    text-align: center; 
-    background-color: #1f2f3e;
-  } 
-
-  #linkedin, #github {
-      font-size: 2em;
-      text-decoration: none;
-      margin:30px;
-      letter-spacing: 0.2em;
-      font-family: 'Rampart One', cursive;
-      color:white
-      /* color:azure; */
-      /* text-align: center; */
   }
 
   @keyframes fadeInUp{
@@ -169,4 +122,67 @@
     }
 
   }
+
+  #portrait {
+    width: 22%;
+    position:absolute;
+    bottom:100px;
+    left: 9%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    filter: grayscale(1) opacity(.8);
+  }
+
+  #portrait:hover {
+    filter: grayscale(0) opacity(1);
+  }
+
+  
+  /* Footer Style */
+
+  footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items:center;
+    align-content:center;
+    text-align: center; 
+    background-color: #1f2f3e;
+    flex-wrap: wrap ;
+  } 
+
+  #linkedin, #github {
+      font-size: 2em;
+      text-decoration: none;
+      margin-right:30px;
+      letter-spacing: 0.2em;
+      font-family: 'Rampart One', cursive;
+      color:white
+  }
+
+  #github:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #6e5494;
+  }
+
+  #linkedin:hover{
+    transition: 1s ease-in-out;
+    background: none;
+    color: #2867b2;
+  }
+
+ 
+  
+  /* @media only screen and (max-width : 600px) {
+    #more-about-Me-div > h1 {
+
+      font-size: 30px;
+
+    }
+  }  */
   
