@@ -2,6 +2,10 @@
     box-sizing:border-box;
     color: #fcfcff;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     margin: 0;
@@ -17,11 +21,6 @@
     align-items: center;
     flex-wrap: wrap ;
   }
-  
-  header :nth-child(3){
-    margin-right: 3rem;
-  }
-  
 
   #button-home, #button-aboutme, #button-project {
     text-decoration: none;
@@ -53,6 +52,7 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
     text-align: center;
+    margin-top: 80px;
   }
 
   .project-items{
