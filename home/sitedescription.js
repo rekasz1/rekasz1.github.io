@@ -9,7 +9,7 @@ export function createsiteDescription() {
     let title = document.createElement('h1');
     title.style.color = "rgb(252, 252, 255)";
     title.innerText = '<Hi, I’m  Reka, Front-end Developer/>';
-    title.setAttribute('id', 'glitch')
+    title.setAttribute('id', 'home-title')
 
 
 
