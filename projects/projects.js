@@ -37,7 +37,7 @@ var projectsList = [
     },
     {
         id: projectId++,
-        title: "To Do Lsit",
+        title: "To Do List",
         source: 'https://github.com/rekasz1/To_Do_List',
         img: "../assets/Todo.PNG"
     },
