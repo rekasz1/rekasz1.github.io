@@ -54,6 +54,12 @@ var projectsList = [
         source: 'https://github.com/rekasz1/Fake_React_Shop',
         img: "../assets/react-shop.PNG"
     },
+    {
+        id: projectId++,
+        title: "Pomodoro Timer",
+        source: "https://github.com/rekasz1/Pomodoro",
+        img: "../assets/pomodoro-timer.PNG"
+    }
 ];
 
 
